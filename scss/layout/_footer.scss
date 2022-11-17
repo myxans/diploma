@@ -1,0 +1,134 @@
+.footer {
+    background-color: #F5F5FA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (max-width:400px) {
+        position: relative;
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            color: #B3B3BA;
+            line-height: 1.25;
+        }
+    }
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+
+    @media (max-width:400px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer_address,
+.footer_contacts {
+    display: flex;
+    align-items: center;
+
+    @media (max-width:400px) {
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $link-hover-font-color;
+        }
+    }
+
+    li {
+        list-style-type: none;
+        margin-right: 26px;
+
+        @media (max-width:400px) {
+            margin-right: 0;
+        }
+    }
+
+    li+li {
+        position: relative;
+        margin-left: 18px;
+
+        @media (max-width:400px) {
+            margin-left: 0;
+        }
+    
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 35%;
+            left: -26px;
+            width: 6px;
+            height: 6px;
+            border: 1px solid #B3B3BA;
+            background: #B3B3BA;
+            border-radius: 50%;
+
+            @media (max-width:400px) {
+                display: none;
+            }
+        }
+    }
+
+    & .icon-facebook {
+        font-size: 38px;
+        color: #24A3FF;
+
+        &:hover {
+            color: $link-hover-font-color;
+        }
+    }
+}
+
+.footer_address {
+    @media (max-width:400px) {
+        margin-bottom: 150px;
+    }
+    address {
+        line-height: $primary-line_heigt;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #24A3FF;
+        font-size: 12px;
+        line-height: $primary-line_heigt;
+    }
+}
+.footer_contacts {
+    .footer_tel {
+        font-weight: 700;
+        color: #46466E;
+        line-height: $primary-line_heigt;
+
+        @media (max-width:400px) {
+            margin: 10px 0;
+        }
+    }
+
+    .footer_mail {
+        font-weight: 700;
+        color: #24A3FF;
+        line-height: $primary-line_heigt;
+    }
+
+    @media (max-width:400px) {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 100px;
+    }
+}

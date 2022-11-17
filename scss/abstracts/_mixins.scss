@@ -1,0 +1,35 @@
+%rounded_h {
+    font-weight: 700;
+    color: $primary-font-color;
+    line-height: $primary-line_heigt;
+}
+
+%rounded_a {
+    color: #24A3FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: $primary-line_heigt;
+    position: relative;
+    
+    &:hover {
+        color: $link-hover-font-color;
+    
+        &::after {
+            border-color: $link-hover-font-color;
+        }
+    }
+    
+    &::after {
+        display: inline-block;
+        content: '';
+        border: solid #24A3FF;
+        border-width: 0 0 3px 3px;
+        right: -6px;
+        transform: rotate(-135deg);
+        width: 8px;
+        height: 8px;
+    }
+}

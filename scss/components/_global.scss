@@ -1,0 +1,111 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.conteiner {
+    max-width: $container-size;
+    padding: $container-padding;
+    margin: 0 auto;
+
+    @media (min-width: 1441px) {
+        padding: 0 160px;
+        max-width: 1920px;
+    }
+
+    @media (max-width:600px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.conteiner_small {
+    max-width: $container-size;
+    padding: $container-small-padding;
+    margin: 0 auto;
+
+    @media (min-width: 1441px) {
+        padding: 0 280px;
+        max-width: 1920px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    @media (max-width:600px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.active_lang {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: $primary-line_heigt;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    border-radius: 8px;
+    background: #F0145A;
+}
+
+/*icons*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot?ndvxq4');
+    src: url('../fonts/icomoon/icomoon.eot?ndvxq4#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?ndvxq4') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?ndvxq4') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?ndvxq4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\e900";
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #24A3FF;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #24A3FF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
