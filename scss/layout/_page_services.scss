@@ -1,0 +1,17 @@
+.header_services {
+    position: static;
+    padding-bottom: 60px;
+
+    @media (max-width: 600px) {
+    padding-bottom: 40px;
+    }
+}
+
+.main_partners_services {
+    padding-top: 60px;
+}
+
+.header_logo_services {
+    display: flex;
+    justify-content: start;
+}

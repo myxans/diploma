@@ -53,7 +53,8 @@
 }
 
 #burger_input,
-.burger_icon {
+.burger_icon, 
+.close_icon {
     display: none;
 }
 
@@ -69,6 +70,14 @@
         font-size: 25px;
         z-index: 2;
     }
+}
+
+.close_icon {
+    @media (max-width: 600px) {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        }
 }
 
 .header_nav {
@@ -112,19 +121,13 @@
     }
 }
 
-button {
-    @media (max-width: 600px) {
-        margin-right: 30px;
-    }
-}
-
 #burger_input:checked~.header_nav {
     @media (max-width: 600px) {
         transform: translatey(0);
     }
 }
 
-#close_input:checked~.header_nav {
+#close_input:checked~.header_nav  {
     @media (max-width: 600px) {
     transform: translatey(0);
     }
