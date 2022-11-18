@@ -1,0 +1,271 @@
+.header_about_us {
+    position: static;
+    padding-bottom: 60px;
+
+    @media (max-width:768px) {
+        padding-bottom: 0;
+    }
+
+    .nav_contacts {
+        color: #B3B3BA;
+
+        a {
+            color: #B3B3BA;
+        }
+
+        .site_lang {
+            &:hover {
+                background: #F5F5FA;
+            }
+        }
+
+        .active_lang {
+            color: #fff;
+        }
+    }
+
+    .header_nav {
+        a {
+            color: #24A3FF;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            &:hover:before {
+                border: 1px solid #24A3FF;
+                background: #24A3FF;
+            
+        }
+    }
+
+        @media (max-width: 600px) {
+            padding-bottom: 40px;
+        }
+    }
+
+    .active_logo {
+        color: #323264;
+    }
+
+    .header_nav {
+
+        @media (max-width: 600px) {
+            background: #323264;
+        }
+    } 
+    .burger_icon {
+        span {
+            background-color: #323264;
+        }
+    }
+}
+
+.idea_about_us {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media (max-width:600px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .conteiner_small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+.idea_head_about_us {
+    align-items: flex-start;
+    max-width: 662px;
+    margin-right: 60px;
+    
+    @media (max-width:768px) {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    
+    h1 {
+        @media (max-width:768px) {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.57;
+
+        @media (max-width:768px) {
+            margin: 30px 0;
+        }
+    }
+}
+
+.idea_text_about_us {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 354px;
+
+    @media (max-width:768px) {
+        margin-left: 30px;
+    }
+
+    @media (max-width:600px) {
+        min-width: auto;
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left: -30px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: #E6E6F0;
+        border: 1px solid #E6E6F0;
+    }
+
+    p {
+        font-size: 16px;
+        color: #323264;
+    }
+
+    .box_idea_stat {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 32px;
+            max-height: 32px;
+            margin-right: 5px;
+            line-height: 0;
+        }
+
+        p {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: $primary-line_heigt;
+        }
+    }
+}
+
+.middle_box_idea_stat {
+    padding: 40px 0;
+}
+.team_image_about_us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 438px;
+    margin-bottom: 60px;
+
+    @media (max-width:768px) {
+            min-height: 234px;
+        }
+
+    @media (max-width:600px) {
+        min-height: 114px;
+    }
+
+    h1 {
+        font-size: 96px;
+        line-height: $primary-line_heigt;
+        text-transform: uppercase;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        letter-spacing: 63px;
+
+        @media (max-width:768px) {
+            font-size: 46px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 36px;
+            letter-spacing: 13px;
+        }
+    }
+}
+.team_image_about_us {
+    background-image: url(/image/team_photo_all.jpg);
+    background-size: 100% auto;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+.quality_about_us {
+    .conteiner_small {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+
+        p {
+            max-width: 658px;
+            font-size: 19px;
+            line-height: 1.57;
+            margin-right: 60px;
+            
+            @media (max-width:768px) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        h1 {
+            min-width: 362px;
+
+            @media (max-width:600px) {
+                min-width: auto;
+            }
+        }
+    }
+}
+
+.achievements_about_us {
+    background: #F5F5FA;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #E6E6F0;
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+            color: #323264;
+            margin-bottom: 30px;
+        }
+
+        .box_company_about_us {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 110px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 20 20px;
+            margin: 0 20px;
+
+            img {
+                max-width: 100%;
+                max-height: auto;
+            }
+        }
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}

@@ -6,3 +6,12 @@ $(document).ready(function(){
   slidesToScroll: 1
 });
 });
+
+$(document).ready(function(){
+    $('.company_slider').slick({
+  dots: true,      
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+});
+});
